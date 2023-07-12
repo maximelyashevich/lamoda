@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&family=Montserrat:wght@400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Geologica', sans-serif;
+}
+
+@import 'home';
+@import 'left-bar';
+@import 'top-bar';
+@import 'header';
+@import 'btn';
+@import 'footer';
