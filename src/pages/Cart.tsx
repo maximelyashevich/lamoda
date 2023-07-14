@@ -90,7 +90,7 @@ const Cart: React.FC = () => {
                                     </div>
 
                                     <div>
-                                        <img src='src\assets\trash-can-svgrepo-com.svg' alt='trash' style={{ width: '20px' }} className="cart__item-icon" onClick={() => { dispatch(removeFromCart(el)) }} />
+                                        <img style={{ width: '20px', height: '30px' }} src='https://s1.iconbird.com/ico/2013/9/452/w448h5121380477116trash.png' alt='trash' className="cart__item-icon" onClick={() => { dispatch(removeFromCart(el)) }} />
                                     </div>
                                 </div>
                             </div>

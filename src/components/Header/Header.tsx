@@ -37,11 +37,11 @@ const Header: React.FC = () => {
         location.pathname.includes('cart') ?
           <Link aria-label="home"
             to='/'>
-            <img style={{width: '25px'}} src='src\assets\home-icon-silhouette-svgrepo-com.svg' alt='home'  className='header_icon' />
+            <img style={{width: '25px'}} src='https://cdn-icons-png.flaticon.com/512/69/69524.png' alt='home'  className='header_icon' />
           </Link> :
           <div style={{ display: 'flex', columnGap: '10px' }}>
             <Link aria-label="cart" to="/cart">
-              <img style={{width: '25px'}} src='src\assets\shopping-cart-outline-svgrepo-com.svg' alt='cart' className='header_icon' />
+              <img style={{width: '25px'}} src='https://cdn-icons-png.flaticon.com/512/34/34627.png' alt='cart' className='header_icon' />
             </Link>
             <p style={{ color: 'red' }}>
               {cartTotalQuantity > 0 && cartTotalQuantity}

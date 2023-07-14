@@ -33,20 +33,13 @@
         &-icon {
             position: absolute;
             left: 92%;
-            top: 70%;
+            top: 90%;
             font-size: 30px;
             cursor: pointer;
 
             &:active {
                 transform: translateY(-3px);
             }
-        }
-
-        &-icon-left {
-            position: absolute;
-            left: 80%;
-            bottom: 1%;
-            font-size: 30px;
         }
 
         &-category {
