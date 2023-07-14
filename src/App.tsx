@@ -7,6 +7,8 @@ import { fetchAllCategories, fetchAllProducts } from './store/slice/productSlice
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import NotFound from './pages/NotFound'
+import Cart from './pages/Cart'
+import { addToCartFromLS } from './store/slice/cartSlice'
 
 const App: React.FC = () => {
 
@@ -15,6 +17,7 @@ const App: React.FC = () => {
   React.useEffect(() => {
     dispatch(fetchAllProducts())
     dispatch(fetchAllCategories())
+    dispatch(addToCartFromLS())
   }, [])
 
   return (
@@ -23,6 +26,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
       <Footer />
     </div>

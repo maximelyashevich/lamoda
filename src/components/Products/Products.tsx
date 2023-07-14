@@ -5,7 +5,6 @@ import Product from './Product'
 
 const Products: React.FC = () => {
     const { products } = useAppSelector(store => store.products)
-
       
     return (
         <div className='home__products'>
@@ -14,8 +13,7 @@ const Products: React.FC = () => {
                     return (
                         <div key={el.id}>
                             <Product product={el}/>
-                        </div>
-                        
+                        </div>   
                     )
                 })
             }

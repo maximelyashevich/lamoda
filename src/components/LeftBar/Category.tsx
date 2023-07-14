@@ -1,19 +1,25 @@
 import React from 'react'
 import { useAppDispatch } from '../../hooks'
 import { fetchProductsByCategory } from '../../store/slice/productSlice'
+import { motion } from 'framer-motion'
+import { leftAnimation } from '../../animation'
 
 interface IProps {
-    category: string
+  category: string
 }
 
 const Category: React.FC<IProps> = (props) => {
-    const dispatch = useAppDispatch() 
+  const dispatch = useAppDispatch()
   return (
-    <div className='left-bar-cat'>
-        <p onClick={()=> dispatch(fetchProductsByCategory(props.category))}>
-            {props.category.toUpperCase()}
-        </p>
-    </div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.3, once: true }}
+      className='left-bar-cat'>
+      <motion.p variants={leftAnimation} onClick={() => dispatch(fetchProductsByCategory(props.category))}>
+        {props.category.toUpperCase()}
+      </motion.p>
+    </motion.div>
   )
 }
 
