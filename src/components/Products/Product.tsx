@@ -22,7 +22,7 @@ const Product: React.FC<IProps> = (props) => {
       className='home__product'>
       <motion.div variants={leftAnimation} className="home__product-images">
         {
-          cartItems.find(el => el.id === props.product.id) ? <img style={{ width: '20px', height: '30px' }} src='https://s1.iconbird.com/ico/2013/9/452/w448h5121380477116trash.png' alt='trash' className='home__product-icon' onClick={() => dispatch(removeFromCart(props.product))} /> : <img src='https://cdn-icons-png.flaticon.com/512/34/34627.png' alt='cart' style={{ width: '25px', height: '25px' }} className='home__product-icon' onClick={() => {
+          cartItems.find(el => el.id === props.product.id) ? <img style={{ width: '20px', height: '30px' }} src='https://s1.iconbird.com/ico/2013/9/452/w448h5121380477116trash.png' alt='trash' className='home__product-icon' onClick={() => dispatch(removeFromCart(props.product))} /> : <img src='https://cdn-icons-png.flaticon.com/512/34/34627.png' alt='cart' style={{ width: '26.25px', height: '25px' }} className='home__product-icon' onClick={() => {
             dispatch(addToCart(props.product))
           }} />
         }
